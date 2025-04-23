@@ -19,13 +19,13 @@
   }
   
   .logo {
-    height: 80px;
+    height: 100px;
     max-width: 200px;
   }
   
   .navbar-links {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
   }
   
   .nav-link {

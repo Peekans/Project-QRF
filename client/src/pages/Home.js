@@ -8,6 +8,7 @@ import { MdOutlinePersonPinCircle } from "react-icons/md";
 
 const Home = () => {
   return (
+    // In home container, add City official logo Make it look official and not as accessible
     <div className="home-container">
       <div className="header">
         <div className="logo-container">
@@ -20,7 +21,7 @@ const Home = () => {
           <p>Master the skies with Gold Mind's premier drone certification program</p>
           <div className="hero-buttons">
             <Link to="/certifications" className="btn btn-primary">Sign in</Link>
-            <Link to="/job-postings" className="btn btn-secondary">Employe</Link>
+            <Link to="/job-postings" className="btn btn-secondary">City Official</Link>
           </div>
         </div>
       </section>
@@ -32,25 +33,25 @@ const Home = () => {
         <div className="class-cards">
           <div className="class-card">
             <div className="icon-container">
-            <MdComputer size={40}/>
+              <MdComputer size={40} />
             </div>
             <h3>Online Courses</h3>
             <p>Study for your Part 107 test from the comfort of your home</p>
             <Link to="/certifications" className="btn btn-outline">Browse Courses</Link>
           </div>
-          
+
           <div className="class-card">
             <div className="icon-container">
-            <MdOutlinePersonPinCircle size={50}/>
+              <MdOutlinePersonPinCircle size={50} />
             </div>
             <h3>In-Person Training</h3>
             <p>Hands-on flight training with experienced FAA-certified instructors</p>
             <Link to="/certifications" className="btn btn-outline">Schedule Training</Link>
           </div>
-          
+
           <div className="class-card">
             <div className="icon-container">
-            <GiDeliveryDrone size={50}/>
+              <GiDeliveryDrone size={50} />
             </div>
             <h3>Certification Prep</h3>
             <p>Comprehensive exam preparation with high success rates</p>
@@ -61,10 +62,12 @@ const Home = () => {
 
       <section className="opportunities">
         <div className="section-header">
-          <h2>Las Vegas Drone Opportunities</h2>
-          <p>All local students who pass their Part 107 Test are encouraged to join the Gold Mind Las Vegas pilot network! We don't just train you - we take it a step further and welcome you to our local pilot network! It's completely free, and once you join, we'll send you drone job opportunities in your area that allow you to gain experience, build up a credibility, and make money!</p>
+          <div>
+            <h2>Las Vegas Drone Opportunities</h2>
+            <p>All local students who pass their Part 107 Test are encouraged to join the Gold Mind Las Vegas pilot network! We don't just train you - we take it a step further and welcome you to our local pilot network! It's completely free, and once you join, we'll send you drone job opportunities in your area that allow you to gain experience, build up a credibility, and make money!</p>
+          </div>
         </div>
-          
+
         <div className="gallery">
           <div className="gallery-item large">
             <img src="/vegascon.webp" alt="Las Vegas Aerial Shot" />

@@ -16,14 +16,14 @@ const Profile = () => {
       { name: "C++", institution: "University of Nevada-Las Vegas", logo: "/unlv-logo.png" }
     ],
     certifications: [
-      { 
-        name: "FAA Part 107 - Commercial Drone Pilot", 
+      {
+        name: "FAA Part 107 - Commercial Drone Pilot",
         issuer: "Federal Aviation Administration",
         date: "March 2024",
         status: "Active"
       },
-      { 
-        name: "Drone Aerial Photography", 
+      {
+        name: "Drone Aerial Photography",
         issuer: "Gold Mind Academy",
         date: "January 2024",
         status: "Active"
@@ -58,54 +58,7 @@ const Profile = () => {
       <div className="profile-header">
         <h1>Hello, {user.name}</h1>
       </div>
-
       <div className="profile-content">
-        {/* Education Section */}
-        <div className="profile-section">
-          <div className="section-header">
-            <h2>Education</h2>
-            <div className="section-actions">
-              <button className="icon-button add-button">+</button>
-              <button className="icon-button edit-button">✏️</button>
-            </div>
-          </div>
-          <div className="education-item">
-            <div className="institution-logo">
-              <img src={user.education.logo} alt="UNLV Logo" />
-            </div>
-            <div className="education-details">
-              <h3>{user.education.school}</h3>
-              <p>{user.education.degree}</p>
-              <p className="year-range">{user.education.years}</p>
-              <div className="skill-tag">C++</div>
-            </div>
-          </div>
-        </div>
-
-        {/* Skills Section */}
-        <div className="profile-section">
-          <div className="section-header">
-            <h2>Skills</h2>
-            <div className="section-actions">
-              <button className="icon-button add-button">+</button>
-              <button className="icon-button edit-button">✏️</button>
-            </div>
-          </div>
-          <div className="skills-list">
-            {user.skills.map((skill, index) => (
-              <div key={index} className="skill-item">
-                <h3>{skill.name}</h3>
-                {skill.institution && (
-                  <div className="skill-institution">
-                    {skill.logo && <img src={skill.logo} alt="Institution Logo" className="small-logo" />}
-                    <span>{skill.institution}</span>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-
         {/* Certifications Section */}
         <div className="profile-section">
           <div className="section-header">
@@ -181,8 +134,8 @@ const Profile = () => {
                   <p className="enrollment-date">Enrolled on {course.enrollmentDate}</p>
                   <div className="progress-container">
                     <div className="progress-bar">
-                      <div 
-                        className="progress-fill" 
+                      <div
+                        className="progress-fill"
                         style={{ width: `${course.progress}%` }}
                       ></div>
                     </div>

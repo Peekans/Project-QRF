@@ -11,6 +11,7 @@ import Profile from './pages/Profile'
 // For navbar, change Employers/posting to Continued education
 // For job postings, just reference oxford or harvard mba job report and hopefully filter for Nevada?
 // Add a check list to profile on the 10 week plan from Goldmind plan i think??
+// Harvard MBA JOB REPORT
 function App() {
   return (
     <Router>

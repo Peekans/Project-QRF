@@ -11,9 +11,9 @@ const Navbar = () => {
         </div>
         <div className="navbar-links">
           <Link to="/Profile" className="nav-link">Profile</Link>
-          <Link to="/certifications" className="nav-link">Certifications</Link>
-          <Link to="/job-postings" className="nav-link">Job Postings</Link>
-          <Link to="/employer-postings" className="nav-link">Employers/Postings</Link>
+          <Link to="/certifications" className="nav-link">CDP Program</Link>
+          <Link to="/job-postings" className="nav-link">Job Listing</Link>
+          <Link to="/employer-postings" className="nav-link">Continued Education</Link>
         </div>
       </div>
     </nav>

@@ -21,7 +21,6 @@ const Home = () => {
           <p>Master the skies with Gold Mind's premier drone certification program</p>
           <div className="hero-buttons">
             <Link to="/certifications" className="btn btn-primary">Sign in</Link>
-            <Link to="/job-postings" className="btn btn-secondary">City Official</Link>
           </div>
         </div>
       </section>
@@ -35,7 +34,7 @@ const Home = () => {
             <div className="icon-container">
               <MdComputer size={40} />
             </div>
-            <h3>Online Courses</h3>
+            <h3>CDP Course</h3>
             <p>Study for your Part 107 test from the comfort of your home</p>
             <Link to="/certifications" className="btn btn-outline">Browse Courses</Link>
           </div>
@@ -44,7 +43,7 @@ const Home = () => {
             <div className="icon-container">
               <MdOutlinePersonPinCircle size={50} />
             </div>
-            <h3>In-Person Training</h3>
+            <h3>Job market</h3>
             <p>Hands-on flight training with experienced FAA-certified instructors</p>
             <Link to="/certifications" className="btn btn-outline">Schedule Training</Link>
           </div>
@@ -53,7 +52,7 @@ const Home = () => {
             <div className="icon-container">
               <GiDeliveryDrone size={50} />
             </div>
-            <h3>Certification Prep</h3>
+            <h3>Continued Education </h3>
             <p>Comprehensive exam preparation with high success rates</p>
             <Link to="/certifications" className="btn btn-outline">Get Started</Link>
           </div>

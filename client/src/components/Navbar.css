@@ -1,57 +1,156 @@
 .navbar {
-    padding: 0.5rem 0;
-    width: 100%;
-  }
-  
+  padding: 0.8rem 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 2.5rem; /* Increased padding on sides */
+  margin: 0 auto;
+}
+
+/* Logo Section */
+.navbar-logos {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 70px;
+  width: auto;
+}
+
+.nlv-logo {
+  height: 50px;
+  width: auto;
+}
+
+/* Welcome Message - We'll hide this for the layout in the image */
+.navbar-welcome {
+  display: none; /* Hide welcome message as it's not in the current layout */
+}
+
+/* Controls Section (Hamburger Menu and Settings) */
+.navbar-controls {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  position: relative;
+}
+
+.menu-button, .settings-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.menu-button:hover, .settings-button:hover {
+  background-color: rgba(201, 168, 107, 0.1);
+  color: #c9a86b;
+}
+
+.menu-label, .settings-label {
+  font-weight: 500;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 1rem 0;
+  width: 240px;
+  z-index: 1000;
+  display: none;
+  margin-top: 0.5rem;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.menu-item {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  transition: background-color 0.2s;
+  font-size: 0.95rem;
+}
+
+.menu-item:hover {
+  background-color: rgba(201, 168, 107, 0.1);
+  color: #c9a86b;
+}
+
+/* Settings */
+.settings {
+  display: flex;
+}
+
+.settings-button {
+  text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
   .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0 3rem;
+    padding: 0 1.5rem;
   }
   
-  .navbar-logo {
-    display: flex;
-    align-items: center;
-    margin-left: -1rem;
-    
+  .navbar-logos {
+    gap: 0.5rem;
   }
   
-  .logo {
-    height: 100px;
-    max-width: 200px;
+  .logo, .nlv-logo {
+    height: 50px;
   }
   
-  .navbar-links {
-    display: flex;
+  .menu-label, .settings-label {
+    display: none;
+  }
+  
+  .navbar-controls {
     gap: 1rem;
   }
-  
-  .nav-link {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    padding: 0.5rem;
+}
+
+@media (max-width: 576px) {
+  .navbar-container {
+    flex-wrap: wrap;
   }
   
-  .nav-link:hover {
-    color: #c9a86b; /* Gold color similar to the logo */
+  .navbar-logos {
+    order: 1;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 0.5rem;
   }
   
-  @media (max-width: 768px) {
-    .navbar-container {
-      flex-direction: column;
-      padding: 1rem;
-      gap: 1rem;
-    }
-    
-    .navbar-links {
-      width: 100%;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
+  .navbar-controls {
+    order: 2;
+    width: 100%;
+    justify-content: space-between;
   }
+}

@@ -1,97 +1,147 @@
 .profile-container {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
-  
-  .profile-header {
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #eee;
-  }
-  
-  .profile-header h1 {
-    font-size: 2rem;
-    color: #333;
-  }
-  
-  .profile-content {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  
-  .profile-section {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
-    transition: all 0.3s ease;
-  }
-  
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
 
-  
-  .section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1.5rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid #eee;
-  }
-  
-  .section-header h2 {
-    font-size: 1.4rem;
-    color: #333;
-    margin: 0;
-  }
-  
-  .section-actions {
-    display: flex;
-    gap: 0.5rem;
-  }
-  
-  .icon-button {
-    background: none;
-    border: none;
-    font-size: 1.2rem;
-    color: #777;
-    cursor: pointer;
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
-    transition: all 0.2s ease;
-  }
-  
-  .icon-button:hover {
-    color: #c9a86b;
-    background-color: rgba(201, 168, 107, 0.1);
-  }
-  
-  .add-button, .edit-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .view-all-button {
-    color: #c9a86b;
-    font-size: 0.9rem;
-    font-weight: 600;
-  }
-  /* Checklist Styling */
+.profile-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.profile-header h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.profile-section {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.section-header h2 {
+  font-size: 1.4rem;
+  color: #333;
+  margin: 0;
+}
+
+.section-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.section-description {
+  color: #666;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* Button Styles */
+.icon-button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #777;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.icon-button:hover {
+  color: #c9a86b;
+  background-color: rgba(201, 168, 107, 0.1);
+}
+
+.primary-button {
+  background-color: #c9a86b;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.primary-button:hover {
+  background-color: #b89559;
+}
+
+.upload-button {
+  background-color: #f0f0f0;
+  color: #444;
+  border: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.upload-button:hover {
+  background-color: #e0e0e0;
+}
+
+.upload-button::before {
+  content: "📤";
+  font-size: 1.1rem;
+}
+
+.secondary-button {
+  background-color: transparent;
+  color: #c9a86b;
+  border: 1px solid #c9a86b;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.secondary-button:hover {
+  background-color: rgba(201, 168, 107, 0.1);
+}
+
+/* Resources Section */
+.resources-section {
+  border-left: 4px solid #4caf50;
+}
+
+/* Checklist Styling */
 .checklist-section {
   border-left: 4px solid #c9a86b;
 }
 
 .checklist-container {
-
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 0.8rem;
 }
 
 .checklist-item {
-  padding: 1rem 0;
+  padding: 0.7rem 0;
 }
 
 .checkbox-container {
@@ -163,196 +213,44 @@
   color: #888;
 }
 
-  /* Certifications Styles */
-  .certifications-list {
-    display: flex;
+/* Additional Assistance Styles */
+.assistance-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.assistance-item {
+  background-color: #f8f8f8;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.assistance-item h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.assistance-item p {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 1rem;
+  }
+  
+  .section-header {
     flex-direction: column;
-    gap: 1.5rem;
+    align-items: flex-start;
+    gap: 0.5rem;
   }
   
-  .certification-item {
-    display: flex;
-    gap: 1rem;
+  .checklist-container {
+    grid-template-columns: 1fr;
   }
-  
-  .certification-icon {
-    flex-shrink: 0;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f0e6d2;
-    border-radius: 50%;
-    font-size: 1.2rem;
-  }
-  
-  .certification-details h3 {
-    font-size: 1.1rem;
-    margin: 0 0 0.25rem 0;
-  }
-  
-  .certification-details p {
-    margin: 0 0 0.5rem 0;
-    color: #555;
-  }
-  
-  .issue-date {
-    color: #777;
-    font-size: 0.9rem;
-  }
-  
-  .status-badge {
-    display: inline-block;
-    padding: 0.2rem 0.6rem;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    font-weight: 600;
-  }
-  
-  .status-badge.active {
-    background-color: #e6f5e6;
-    color: #2e7d32;
-  }
-  
-  .status-badge.expired {
-    background-color: #ffeeee;
-    color: #d32f2f;
-  }
-  
-  /* Application Status Styles */
-  .applications-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  
-  .application-item {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .application-icon {
-    flex-shrink: 0;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #e3f2fd;
-    border-radius: 50%;
-    font-size: 1.2rem;
-  }
-  
-  .application-details h3 {
-    font-size: 1.1rem;
-    margin: 0 0 0.25rem 0;
-  }
-  
-  .application-details p {
-    margin: 0 0 0.5rem 0;
-    color: #555;
-  }
-  
-  .application-date {
-    color: #777;
-    font-size: 0.9rem;
-  }
-  
-  .status-badge.under-review {
-    background-color: #fff8e1;
-    color: #f57f17;
-  }
-  
-  .status-badge.rejected {
-    background-color: #ffeeee;
-    color: #d32f2f;
-  }
-  
-  .status-badge.accepted {
-    background-color: #e6f5e6;
-    color: #2e7d32;
-  }
-  
-  /* Courses Styles */
-  .courses-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  
-  .course-item {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .course-icon {
-    flex-shrink: 0;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f3e5f5;
-    border-radius: 50%;
-    font-size: 1.2rem;
-  }
-  
-  .course-details h3 {
-    font-size: 1.1rem;
-    margin: 0 0 0.25rem 0;
-  }
-  
-  .course-details p {
-    margin: 0 0 0.5rem 0;
-    color: #555;
-  }
-  
-  .enrollment-date {
-    color: #777;
-    font-size: 0.9rem;
-  }
-  
-  .progress-container {
-    margin-top: 0.5rem;
-  }
-  
-  .progress-bar {
-    height: 8px;
-    background-color: #e0e0e0;
-    border-radius: 4px;
-    overflow: hidden;
-    margin-bottom: 0.25rem;
-  }
-  
-  .progress-fill {
-    height: 100%;
-    background-color: #c9a86b;
-    border-radius: 4px;
-  }
-  
-  .progress-text {
-    font-size: 0.8rem;
-    color: #777;
-  }
-  
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .profile-container {
-      padding: 1rem;
-    }
-    
-    .section-header {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 0.5rem;
-    }
-    
-    .education-item {
-      flex-direction: column;
-    }
-    
-    .institution-logo {
-      margin-bottom: 0.5rem;
-    }
-  }
+}
